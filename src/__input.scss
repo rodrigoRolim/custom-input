@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  position: relative
+}
+.container__input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 2px solid lightslategrey;
+  position: relative
+}
+.container__label {
+  color: black;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top: -8px;
+  transition: top 1s;
+  padding: 0;
+  line-height: 15px;
+  margin: 0
+}
+.container__label:hover {
+  top: 10px
+}
