@@ -16,12 +16,9 @@
   position: absolute;
   z-index: 2;
   left: 15px;
-  top: -8px;
-  transition: top 1s;
+  top: 10px;
+  transition: top 0.5s;
   padding: 0;
   line-height: 15px;
   margin: 0
-}
-.container__label:hover {
-  top: 10px
 }
