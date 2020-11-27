@@ -7,11 +7,12 @@
 .container__input {
   padding: 10px 12px;
   border-radius: 4px;
-  border: 2px solid lightslategrey;
-  position: relative
+  border: 2px solid rgba(83, 83, 83, 0.836);
+  position: relative;
+  outline-color: rgb(49, 118, 247);
 }
 .container__label {
-  color: black;
+  color: rgba(83, 83, 83, 0.836);
   background-color: white;
   position: absolute;
   z-index: 2;
@@ -21,4 +22,12 @@
   padding: 0;
   line-height: 15px;
   margin: 0
+}
+.container__label--up {
+  top: -8px;
+  color: black
+}
+.container__label--down {
+  top: 10px;
+  color: gray
 }
