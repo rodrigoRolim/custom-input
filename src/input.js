@@ -1,12 +1,13 @@
 import "./__input.scss" 
-var obj = {}
-obj.message = ''
+let data = {
+  message: 'rodrigo'
+}
 const template = () => {
   var template = document.createElement("template")
   let node = `
     <div class="container">
       <label for="custom-input" class="container__label" id="label">custom input</label>
-      <input value="${obj.message}" type="text" name="custom-input" id="custom-input" class="container__input" />
+      <input value="${data.message}" type="text" name="custom-input" id="custom-input" class="container__input" />
       <p id="message"></p>  
     </div>
   `
@@ -16,9 +17,10 @@ const template = () => {
 }
 const towWayDataBind = (inputEl) => {
   inputEl.addEventListener("input", (e) => {
-    obj.message = e.target.value
+    console.log(data.message)
+    data.message = e.target.value
     let pEl = document.getElementById("message")
-    pEl.innerHTML = obj.message
+    pEl.innerHTML = data.message
   })
 }
 const inputUnfocus = (inputEl) => {
